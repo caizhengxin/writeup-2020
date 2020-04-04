@@ -31,6 +31,7 @@ Image.open("out.png")
 ## Dissolved
 
 https://ctftime.org/writeup/19157
+https://ctftime.org/writeup/19270
 
 ```python
 # Blue-LSB of all pixels with alpha != 255
@@ -45,6 +46,8 @@ data = data[mask]              # apply mask
 data = data[:,2]&1             # only get green LSB
 BitVector(bitlist=data).get_text_from_bitvector()
 ```
+
+## Toccata
 
 ## 参考
 
