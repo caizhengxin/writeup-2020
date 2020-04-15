@@ -56,3 +56,11 @@ print(s)
 2. 用Chrome浏览器打开
 
 > auctf{har_har34}
+
+## Bash
+
+### BASH 1
+
+1. cat README
+
+> auctf{W3lcoM3_2_da_C7F}
